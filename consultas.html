@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecon.css">
+    <title>Consultas</title>
+</head>
+<body>
+  <header>
+    <h1>CONSULTAS</h1>
+  </header>
+  <nav>
+        <ul>
+            <li><a href="vision.html">VISION</a></li>
+            <li><a href="mision.html">MISION</a></li>
+            <li><a href="pedidos.html">PEDIDOS</a></li>
+            <li><a href="consultas.html">CONSULTAS</a></li>
+            <li><a href="registrate.html">REGISTRATE</a></li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </nav>
+  <section id="buzon-sugerencias">
+  <h3>¡Déjanos tu opinión!</h3>
+  <form id="form-sugerencia">
+    <input type="text" id="nombre" placeholder="Tu nombre (opcional)" />
+    
+    <select id="categoria">
+      <option value="mejora">Sugerencia de mejora</option>
+      <option value="error">Reportar un error</option>
+      <option value="felicitacion">Felicitación</option>
+    </select>
+
+    <textarea id="mensaje" placeholder="Escribe aquí tu sugerencia..." required></textarea>
+    
+    <button type="submit">Enviar sugerencia</button>
+  </form>
+  
+  <div id="mensaje-exito" style="display:none;">
+    <p>✅ ¡Gracias! Tu comentario ha sido recibido.</p>
+  </div>
+</section>
+</body>
+</html>
+
+

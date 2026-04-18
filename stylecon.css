@@ -1,0 +1,135 @@
+/* CENTRAR TODO EL BUZÓN */
+body {
+    margin: 0;
+    padding: 0;
+}
+#buzon-sugerencias {
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px auto; /*  centra horizontal */
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+header {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background: linear-gradient(135deg, #1a4acd 0%, #680e98 100%); /* Colores deportivos */
+    color: white;
+    padding: 2rem;
+    margin:0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* EFECTO HOVER EN EL CONTENEDOR */
+#buzon-sugerencias:hover {
+  transform: translateY(-5px);
+}
+
+/* INPUTS, SELECT Y TEXTAREA */
+#form-sugerencia input, 
+#form-sugerencia select, 
+#form-sugerencia textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* EFECTO AL HACER CLICK */
+#form-sugerencia input:focus, 
+#form-sugerencia select:focus, 
+#form-sugerencia textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* BOTÓN */
+#form-sugerencia button {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* HOVER BOTÓN */
+#form-sugerencia button:hover {
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+  transform: scale(1.05);
+}
+
+/* EFECTO AL HACER CLICK */
+#form-sugerencia button:active {
+  transform: scale(0.98);
+}
+nav {
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(90deg, #0052cc, #1aa2ba);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover efecto */
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+/* Línea animada debajo */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}

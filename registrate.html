@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="estilor.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <header>
+        <h1>REGISTRATE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="vision.html">VISION</a></li>
+            <li><a href="mision.html">MISION</a></li>
+            <li><a href="pedidos.html">PEDIDOS</a></li>
+            <li><a href="consultas.html">CONSULTAS</a></li>
+            <li><a href="registrate.html">REGISTRATE</a></li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </nav>
+    
+    <div class="register-container">
+        <form action="/enviar-datos" method="POST">
+            <h2>Crear Cuenta</h2>
+            
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ej: JuanPerez" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Registrate<a href="registradoex.html"></a></button>
+            
+        </form>
+    </div>
+</body>
+</html>
